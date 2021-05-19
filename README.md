@@ -14,5 +14,5 @@ openweathermap, dadata
 - manual forecast querying
 
 ## plans
-- TS, test
+- TS, tests
 - user manual city selection, not only by sending geolocation
