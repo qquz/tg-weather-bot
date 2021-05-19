@@ -1,6 +1,6 @@
 # telegram-weather-bot
 
-![deploy](https://github.com/qquz/tg-weather-bot/workflows/deploy/badge.svg?branch=main)
+![deploy](https://github.com/qquz/tg-weather-bot/workflows/deploy/badge.svg?branch=master)
 
 Weather telegram bot
 
@@ -12,3 +12,7 @@ openweathermap, dadata
 
 - forecast mailing
 - manual forecast querying
+
+## plans
+- TS, test
+- user manual city selection, not only by sending geolocation
