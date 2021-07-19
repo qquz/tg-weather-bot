@@ -1,8 +1,8 @@
-# telegram-weather-index
+# telegram-weather-bot
 
 ![deploy](https://github.com/qquz/tg-weather-bot/workflows/deploy/badge.svg?branch=master)
 
-Weather telegram index
+Weather telegram bot
 
 JS, telegraf, lowdb
 
