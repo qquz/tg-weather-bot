@@ -1,5 +1,5 @@
 FROM mhart/alpine-node:16.4.2
-WORKDIR /index
+WORKDIR /bot
 COPY package*.json ./
 RUN npm install
 COPY . .
