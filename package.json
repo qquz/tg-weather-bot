@@ -1,13 +1,13 @@
 {
   "name": "weather_bot",
   "version": "1.0.3",
-  "main": "src/index.mjs",
-  "description": "weather bot",
+  "main": "src/app.ts",
+  "description": "Weather bot, node, ts, lowdb, scheduling, dadata, openweathermap",
   "scripts": {
-    "dev": "nodemon src/index.mjs",
-    "docker-build": "docker build --tag webot .",
-    "docker-run": "docker run -d --env-file=./.env --name=webot -v wbot-storage:/root/storage webot",
-    "docker-prod-run": "docker run -d --env-file=/root/.env --name=webot -v wbot-storage:/root/storage webot"
+    "dev": "nodemon src/app.ts",
+    "docker-build": "docker build --tag weatherbot .",
+    "docker-run": "docker run -d --env-file=./.env --name=weatherbot -v weatherbot-storage:/root/storage weatherbot",
+    "docker-prod-run": "docker run -d --env-file=/root/.env --name=weatherbot -v weatherbot-storage:/root/storage weatherbot"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,18 @@
     "lodash": "^4.17.20",
     "lowdb": "^1.0.0",
     "moment": "^2.29.0",
-    "telegraf": "^3.32.0"
+    "telegraf": "^3.32.0",
+    "ts-node": "^10.1.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.171",
+    "@types/lowdb": "^1.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.10.0",
     "eslint-plugin-import": "^2.22.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "typescript": "^4.3.5"
   },
   "nodemonConfig": {
     "ignore": [

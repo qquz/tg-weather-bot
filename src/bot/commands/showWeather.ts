@@ -1,12 +1,11 @@
-import User from '../config/User.mjs';
-import weather from '../../weather/index.mjs';
+import { getUserCityById } from '../utils/user';
+import weather from '../../weather';
 
 const showWeather = async ctx => {
   try {
     const { from: { id } } = ctx.update.message;
 
-    const user = new User();
-    const city = user.getUserCity(id);
+    const city = getUserCityById(id);
 
     if (!city) return ctx.reply('Please, first set your location.');
 

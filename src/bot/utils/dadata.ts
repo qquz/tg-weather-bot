@@ -1,8 +1,8 @@
 import axios from 'axios';
-import env from 'dotenv';
+import { config } from 'dotenv';
 import _ from 'lodash';
 
-env.config();
+config();
 
 const TOKEN_DADATA = process.env.WBOT_TOKEN_DADATA;
 

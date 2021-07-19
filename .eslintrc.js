@@ -1,13 +1,17 @@
-module.exports = {
+// todo prettier
+const options = {
   env: {
-    es6: true,
     node: true
   },
-  extends: 'eslint:recommended',
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module'
-  },
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint'
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended'
+  ],
   rules: {
     semi: ['error', 'always'],
     quotes: ['error', 'single', { 'allowTemplateLiterals': true }],
@@ -31,6 +35,9 @@ module.exports = {
     }],
     'require-await': 'error',
     'object-curly-spacing': ['error', 'always'],
-    'no-duplicate-imports': 'error'
+    'no-duplicate-imports': 'error',
+    'max-len': ['warn', { 'code': 120 }]
   }
 };
+
+module.exports = options;

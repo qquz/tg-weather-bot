@@ -1,5 +1,5 @@
-import User from '../config/User.mjs';
-import { getCityByLocation } from '../utils/dadata.mjs';
+import { setUserCityById } from '../utils/user';
+import { getCityByLocation } from '../utils/dadata';
 
 const setCity = async ctx => {
   try {
@@ -8,8 +8,7 @@ const setCity = async ctx => {
     const location = await getCityByLocation(ctx);
 
     if (location) {
-      const user = new User();
-      user.setUserCity(id, location);
+      setUserCityById(id, location);
 
       ctx.reply(`Thanks, location updated to ${location}. Now you can choose notification time or request forecast.`);
     } else {

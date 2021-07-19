@@ -1,4 +1,4 @@
-import TimeKeyboard from '../keyboards/TimeKeyboard.mjs';
+import TimeKeyboard from '../keyboards/TimeKeyboard';
 
 const promptNotificationTime = ctx => {
   ctx.reply('Choose time for notification:', {

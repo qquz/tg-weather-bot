@@ -1,4 +1,4 @@
-import setNotificationTime from '../actions/setNotificationTime.mjs';
+import setNotificationTime from '../actions/setNotificationTime';
 
 const callbackHandler = ctx => {
   const { data } = ctx.update.callback_query;

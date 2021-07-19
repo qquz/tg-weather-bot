@@ -2,16 +2,15 @@ import moment from 'moment';
 import _ from 'lodash';
 import extra from 'telegraf/extra.js';
 
-import bot from '../bot.mjs';
-import User from '../config/User.mjs';
-import getWeather from '../../weather/index.mjs';
+import { bot } from '../index';
+import { getAllUsers } from '../utils/user';
+import getWeather from '../../weather';
 
 const markup = extra.markdown();
 
-const weatherMailing = async () => {
+const weatherMailing = async (): Promise<void> => {
   try {
-    const user = new User();
-    const users = user.getAll();
+    const users = getAllUsers();
 
     const startOfCurrentHour = moment().utcOffset('+03:00').startOf('hour').format('HH:mm');
 
