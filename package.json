@@ -22,7 +22,7 @@
     "dotenv": "^8.1.0",
     "lodash": "^4.17.20",
     "lowdb": "^1.0.0",
-    "moment": "^2.29.0",
+    "moment": "^2.29.2",
     "telegraf": "^3.32.0"
   },
   "devDependencies": {
