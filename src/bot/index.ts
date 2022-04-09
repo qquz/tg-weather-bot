@@ -1,13 +1,13 @@
-import env from 'dotenv';
+import { config } from 'dotenv';
 import Telegraf from 'telegraf';
 
-import promptNotificationTime from './commands/promptNotificationTime.mjs';
-import setCity from './commands/setCity.mjs';
-import showWeather from './commands/showWeather.mjs';
+import promptNotificationTime from './commands/promptNotificationTime';
+import setCity from './commands/setCity';
+import showWeather from './commands/showWeather';
 
-import callbackHandler from './utils/callbackHandler.mjs';
+import callbackHandler from './utils/callbackHandler';
 
-env.config();
+config();
 
 const bot = new Telegraf(process.env.WBOT_TOKEN_BOT);
 
@@ -17,4 +17,4 @@ bot.command('evening', ctx => promptNotificationTime(ctx));
 bot.on('callback_query', ctx => callbackHandler(ctx));
 bot.on('location', ctx => setCity(ctx));
 
-export default bot;
+export { bot };

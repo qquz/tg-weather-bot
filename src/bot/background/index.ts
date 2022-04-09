@@ -2,7 +2,13 @@ import cron from 'cron';
 
 const { CronJob } = cron;
 
-const start = list => {
+interface ListItem {
+  active: boolean;
+  schedule: string;
+  worker(): void;
+}
+
+const start = (list: ListItem[]): void => {
   Object.keys(list).map(job => {
     const { active, schedule, worker } = list[job];
 

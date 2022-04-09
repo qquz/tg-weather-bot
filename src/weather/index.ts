@@ -1,6 +1,6 @@
-import getWeather from './providers/owm.mjs';
+import getWeather from './providers/owm';
 
-const weather = async city => {
+const weather = async (city: string): Promise<string> => {
   try {
     return await getWeather(city);
   } catch (e) {

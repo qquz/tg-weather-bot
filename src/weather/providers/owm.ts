@@ -1,10 +1,10 @@
 import axios from 'axios';
-import env from 'dotenv';
+import { config } from 'dotenv';
 import _ from 'lodash';
 
-import { owm } from '../mappers/index.mjs';
+import { owm } from '../mappers';
 
-env.config();
+config();
 
 const openWeatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=';
 const units = 'metric';

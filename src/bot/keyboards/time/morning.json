@@ -1,0 +1,30 @@
+[
+  [
+    {
+      "text":"06:00",
+      "callback_data":"{'type':'SET_NOTIFICATION_TIME','payload':'06:00'}"
+    },
+    {
+      "text":"07:00",
+      "callback_data":"{'type':'SET_NOTIFICATION_TIME','payload':'07:00'}"
+    },
+    {
+      "text":"08:00",
+      "callback_data":"{'type':'SET_NOTIFICATION_TIME','payload':'08:00'}"
+    }
+  ],
+  [
+    {
+      "text":"09:00",
+      "callback_data":"{'type':'SET_NOTIFICATION_TIME','payload':'09:00'}"
+    },
+    {
+      "text":"10:00",
+      "callback_data":"{'type':'SET_NOTIFICATION_TIME','payload':'10:00'}"
+    },
+    {
+      "text":"11:00",
+      "callback_data":"{'type':'SET_NOTIFICATION_TIME','payload':'11:00'}"
+    }
+  ]
+]
