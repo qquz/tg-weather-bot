@@ -5,9 +5,7 @@
   "description": "weather bot",
   "scripts": {
     "dev": "nodemon src/index.mjs",
-    "docker-build": "docker build --tag webot .",
     "docker-run": "docker run -d --env-file=./.env --name=webot -v wbot-storage:/root/storage webot",
-    "docker-prod-run": "docker run -d --env-file=/root/.env --name=webot -v wbot-storage:/root/storage webot"
   },
   "repository": {
     "type": "git",
