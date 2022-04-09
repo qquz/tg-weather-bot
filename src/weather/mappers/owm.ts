@@ -143,7 +143,7 @@ export default (weather: Weather[], city: string): string => {
     result = result.concat(`${propValuePreparator(slicedData[i].main.humidity, 'humidity')} | `);
     result = result.concat(`${propValuePreparator(slicedData[i].clouds.all, 'cloudiness')} | `);
     result = result.concat(weatherCodes[slicedData[i].weather[0].id]);
-    result += '------------------------------------------------------------';
+    // result += '------------------------------------------------------------';
     result += `\n`;
   }
 

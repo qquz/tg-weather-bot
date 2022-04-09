@@ -1,4 +1,3 @@
-// todo prettier
 const options = {
   env: {
     node: true

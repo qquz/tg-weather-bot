@@ -5,9 +5,7 @@
   "description": "Weather bot, node, ts, lowdb, scheduling, dadata, openweathermap",
   "scripts": {
     "dev": "nodemon src/app.ts",
-    "docker-build": "docker build --tag weatherbot .",
-    "docker-run": "docker run -d --env-file=./.env --name=weatherbot -v weatherbot-storage:/root/storage weatherbot",
-    "docker-prod-run": "docker run -d --env-file=/root/.env --name=weatherbot -v weatherbot-storage:/root/storage weatherbot"
+    "docker-run": "docker run -d --env-file=./.env --name=webot -v wbot-storage:/root/storage webot"
   },
   "repository": {
     "type": "git",
@@ -17,12 +15,12 @@
   "author": "qquz",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "cron": "^1.7.2",
     "dotenv": "^8.1.0",
     "lodash": "^4.17.20",
     "lowdb": "^1.0.0",
-    "moment": "^2.29.0",
+    "moment": "^2.29.2",
     "telegraf": "^3.32.0",
     "ts-node": "^10.1.0"
   },
